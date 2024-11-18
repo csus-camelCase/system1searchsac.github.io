@@ -81,7 +81,51 @@ img{
     color: white;
     font-weight: 600;
 }
+/* Resume Label Styling */
+.wrapper .input-box label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
 
+/* File Input Styling */
+.wrapper .input-box input[type="file"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 30px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Dropdown Box Styling */
+.wrapper .dropdown-box {
+    position: relative;
+}
+
+.wrapper .dropdown-box select {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 40px;
+    font-size: 16px;
+    color: black;
+    padding: 10px 20px;
+    appearance: none; /* Removes default arrow */
+    outline: none;
+}
+
+.wrapper .dropdown-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: black;
+}
 .wrapper .forgot {
     display: flex;
     justify-content: space-between;
@@ -116,4 +160,24 @@ img{
 
 .sign-up p a:hover {
     text-decoration: underline;
+}
+/* Specific styling for the file input icon alignment */
+.wrapper .input-box.file-upload {
+    position: relative;
+    width: 100%;
+    margin: 30px 0;
+}
+
+.wrapper .input-box.file-upload input[type="file"] {
+    padding-right: 50px; /* Leave space for icon on the right */
+}
+
+.wrapper .input-box.file-upload i {
+    position: absolute;
+    right: 20px;
+    top: 100%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: black;
+    pointer-events: none; /* Ensure icon does not interfere with file input click */
 }
